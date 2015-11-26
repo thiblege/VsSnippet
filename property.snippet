@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Propriété</Title>
+          <Shortcut>GSProp</Shortcut>
+        </Header>
+        <Snippet>
+		<Declarations>
+      <Object>
+        <ID>VariableName</ID>
+        <ToolTip>Replace with the name of Properties.</ToolTip>
+        <Type>var</Type>
+        <Default>TheVariable</Default>
+      </Object>
+      <Object>
+        <ID>VariableType</ID>
+        <ToolTip>Replace with the Type of Properties.</ToolTip>
+        <Type>System.Type</Type>
+        <Default>int</Default>
+      </Object>
+		</Declarations>
+            <Code Language="csharp">
+                <![CDATA[
+                #region $PropertyName$
+                
+                public $VariableType$ $VariableName$
+        {
+            get; set;
+        }
+        
+        #endregion
+        ]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Propriété Format Long</Title>
+      <Shortcut>LongGSProp</Shortcut>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>GalaSoft.MvvmLight</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Object>
+          <ID>PropertyName</ID>
+          <ToolTip>Replace with the name of Properties.</ToolTip>
+          <Type>var</Type>
+          <Default>TheProperty</Default>
+        </Object>
+        <Object>
+          <ID>PropertyType</ID>
+          <ToolTip>Replace with the Type of Properties.</ToolTip>
+          <Type>System.Type</Type>
+          <Default>int</Default>
+        </Object>
+        <Object>
+          <ID>BackingPropertyName</ID>
+          <ToolTip>Replace with the name of BackingField.</ToolTip>
+          <Type>var</Type>
+          <Default>theProperty</Default>
+        </Object>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[#region $PropertyName$
+
+        private $PropertyType$ _$BackingPropertyName$;
+        public $PropertyType$ $PropertyName$
+        {
+            get
+            {
+                return _$BackingPropertyName$;
+            }
+
+            set
+            {
+                if(_$BackingPropertyName$ != value){
+                    _$BackingPropertyName$ = value;
+                    RaisePropertyChanged(nameof($PropertyName$));
+                }
+            }
+        }
+
+        #endregion
+
+]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
