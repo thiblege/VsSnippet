@@ -1,0 +1,2 @@
+# VsSnippet
+some usefull snippet
