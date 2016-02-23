@@ -67,7 +67,7 @@
         </Object>
       </Declarations>
       <Code Language="csharp">
-        <![CDATA[#region $PropertyName$
+        <![CDATA[#region public $PropertyType$ $PropertyName$
 
         private $PropertyType$ _$BackingPropertyName$;
         public $PropertyType$ $PropertyName$
@@ -79,10 +79,7 @@
 
             set
             {
-                if(_$BackingPropertyName$ != value){
-                    _$BackingPropertyName$ = value;
-                    RaisePropertyChanged(nameof($PropertyName$));
-                }
+                Set(ref _$BackingPropertyName$, value);
             }
         }
 
