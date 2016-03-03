@@ -56,6 +56,38 @@ public $type$ $Property$ {&#xD;
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=97A6C4B9BE74814E9C6867193C1DAC35/Field/=name/Expression/@EntryValue">decapitalize(Name)</s:String>
 	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=97A6C4B9BE74814E9C6867193C1DAC35/Field/=name/InitialRange/@EntryValue">-1</s:Int64>
 	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=97A6C4B9BE74814E9C6867193C1DAC35/Field/=name/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF227D2FC3FC234DA0348B5909481A29/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF227D2FC3FC234DA0348B5909481A29/Shortcut/@EntryValue">BKObservableCollection</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF227D2FC3FC234DA0348B5909481A29/Text/@EntryValue">#region public ObservableCollection&lt;$type$&gt; $Name$&#xD;
+        private ObservableCollection&lt;$type$&gt; _$name$;&#xD;
+&#xD;
+        public ObservableCollection&lt;$type$&gt; $Name$&#xD;
+        {&#xD;
+            get&#xD;
+            {&#xD;
+                return _$name$ ?? (_$name$ = new ObservableCollection&lt;$type$&gt;());&#xD;
+            }&#xD;
+        }&#xD;
+&#xD;
+#endregion</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF227D2FC3FC234DA0348B5909481A29/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF227D2FC3FC234DA0348B5909481A29/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF227D2FC3FC234DA0348B5909481A29/Categories/=BK/@EntryIndexedValue">BK</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF227D2FC3FC234DA0348B5909481A29/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF227D2FC3FC234DA0348B5909481A29/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF227D2FC3FC234DA0348B5909481A29/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF227D2FC3FC234DA0348B5909481A29/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF227D2FC3FC234DA0348B5909481A29/Field/=type/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF227D2FC3FC234DA0348B5909481A29/Field/=type/Expression/@EntryValue">suggestVariableType()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF227D2FC3FC234DA0348B5909481A29/Field/=type/InitialRange/@EntryValue">2</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF227D2FC3FC234DA0348B5909481A29/Field/=type/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF227D2FC3FC234DA0348B5909481A29/Field/=Name/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF227D2FC3FC234DA0348B5909481A29/Field/=Name/InitialRange/@EntryValue">1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF227D2FC3FC234DA0348B5909481A29/Field/=Name/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF227D2FC3FC234DA0348B5909481A29/Field/=name/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF227D2FC3FC234DA0348B5909481A29/Field/=name/Expression/@EntryValue">decapitalize(Name)</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF227D2FC3FC234DA0348B5909481A29/Field/=name/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF227D2FC3FC234DA0348B5909481A29/Field/=name/Order/@EntryValue">2</s:Int64>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CE5AB01876714A4988FF5ACADAF47C4A/@KeyIndexDefined">True</s:Boolean>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CE5AB01876714A4988FF5ACADAF47C4A/Shortcut/@EntryValue">BKProp</s:String>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CE5AB01876714A4988FF5ACADAF47C4A/Text/@EntryValue">#region $type$ $property$&#xD;
