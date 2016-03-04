@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>ViewModelLocator property</Title>
+          <Shortcut>BKVMLocatorProperty</Shortcut>
+        </Header>
+        <Snippet>
+		<Declarations>
+      <Object>
+        <ID>ViewModelType</ID>
+        <ToolTip>Type of the view model class</ToolTip>
+        <Type>System.Type</Type>
+        <Default>ViewModelType</Default>
+      </Object>
+      <Object>
+        <ID>ViewModelName</ID>
+        <ToolTip>Replace with the name of view model.</ToolTip>
+        <Type>var</Type>
+        <Default>ViewModelName</Default>
+      </Object>
+		</Declarations>
+            <Code Language="csharp">
+                <![CDATA[
+                #region public $ViewModelType$ $ViewModelName$
+
+				public $ViewModelType$ $ViewModelName$
+				{
+					get
+					{
+						return ServiceLocator.Current.GetInstance<$ViewModelType$>();
+					}
+				}
+        
+        #endregion
+        ]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
